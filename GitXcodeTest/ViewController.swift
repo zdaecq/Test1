@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let newView = UIView(frame: CGRect(x: 50, y: 50, width: 50, height: 50))
+        newView.backgroundColor = UIColor.redColor()
+        view.addSubview(newView)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
