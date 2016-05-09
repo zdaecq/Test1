@@ -61,7 +61,7 @@ import UIKit
     
     func setupGradientLayer() {
         gradientLayer = CAGradientLayer()
-        gradientLayer.frame = frame
+        gradientLayer.frame = bounds
         gradientLayer.colors = [topColor.CGColor, bottomColor.CGColor]
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 0, y: bottomYPoint)
@@ -183,7 +183,7 @@ extension UIView {
     func setupBlurWithStyle(style: UIBlurEffectStyle = .Light) {
         let blurEffect = UIBlurEffect(style: style)
         let blurView = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = self.frame
+        blurView.frame = self.bounds
         self.addSubview(blurView)
     }
 }
