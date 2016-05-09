@@ -12,7 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.frame.insetBy(dx: 50, dy: 10)
+        gradientLayer.colors = [UIColor.redColor().CGColor, UIColor.clearColor().CGColor]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 0.5)
+        
+        //view.setupBlurWithStyle(.Dark)
+        
+        //view.layer.addSublayer(gradientLayer)
+        //view.addSubview(blurView)
     }
 
     override func didReceiveMemoryWarning() {
