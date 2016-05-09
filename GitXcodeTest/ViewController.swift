@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         gradientLayer.frame = view.frame.insetBy(dx: 50, dy: 10)
         gradientLayer.colors = [UIColor.redColor().CGColor, UIColor.clearColor().CGColor]
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        //fdgdfgdfgdghdfg
         gradientLayer.endPoint = CGPoint(x: 0, y: 0.5)
         
         //view.setupBlurWithStyle(.Dark)
