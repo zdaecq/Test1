@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         let newView = UIView(frame: CGRect(x: 50, y: 50, width: 50, height: 50))
         newView.backgroundColor = UIColor.redColor()
         view.addSubview(newView)
+        
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.frame.insetBy(dx: 50, dy: 10)
         gradientLayer.colors = [UIColor.redColor().CGColor, UIColor.clearColor().CGColor]
