@@ -47,6 +47,16 @@ class ViewController: UIViewController {
         df
         g*/
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         //view.setupBlurWithStyle(.Dark)
         
         //view.layer.addSublayer(gradientLayer)
