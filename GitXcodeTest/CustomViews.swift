@@ -76,7 +76,7 @@ import UIKit
     @IBInspectable var isOn: Bool = true {
         didSet {
             if isOn {
-                self.setupBlurWithStyle(.Dark)
+                self.setupBlurWithStyle(.Light)
             }
         }
     }

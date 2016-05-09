@@ -448,6 +448,7 @@
 				660E5C311CE058CB001D4F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		660E5C441CE07F1E001D4F5A /* Build configuration list for PBXNativeTarget "CustomViews" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +457,7 @@
 				660E5C461CE07F1E001D4F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
