@@ -12,7 +12,36 @@
 		660E5C261CE058CB001D4F5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E5C241CE058CB001D4F5A /* Main.storyboard */; };
 		660E5C281CE058CB001D4F5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660E5C271CE058CB001D4F5A /* Assets.xcassets */; };
 		660E5C2B1CE058CB001D4F5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E5C291CE058CB001D4F5A /* LaunchScreen.storyboard */; };
+		660E5C331CE05B9D001D4F5A /* FadeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660E5C321CE05B9D001D4F5A /* FadeTableViewController.swift */; };
+		660E5C3E1CE07F1E001D4F5A /* CustomViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 660E5C3D1CE07F1E001D4F5A /* CustomViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		660E5C421CE07F1E001D4F5A /* CustomViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */; };
+		660E5C431CE07F1E001D4F5A /* CustomViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		660E5C481CE0800E001D4F5A /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660E5C341CE06AAC001D4F5A /* CustomViews.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		660E5C401CE07F1E001D4F5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 660E5C151CE058CB001D4F5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 660E5C3A1CE07F1E001D4F5A;
+			remoteInfo = CustomViews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		660E5C471CE07F1E001D4F5A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				660E5C431CE07F1E001D4F5A /* CustomViews.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		660E5C1D1CE058CB001D4F5A /* GitXcodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitXcodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +51,23 @@
 		660E5C271CE058CB001D4F5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		660E5C2A1CE058CB001D4F5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		660E5C2C1CE058CB001D4F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		660E5C321CE05B9D001D4F5A /* FadeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTableViewController.swift; sourceTree = "<group>"; };
+		660E5C341CE06AAC001D4F5A /* CustomViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
+		660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		660E5C3D1CE07F1E001D4F5A /* CustomViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViews.h; sourceTree = "<group>"; };
+		660E5C3F1CE07F1E001D4F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		660E5C1A1CE058CB001D4F5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660E5C421CE07F1E001D4F5A /* CustomViews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		660E5C371CE07F1E001D4F5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				660E5C1F1CE058CB001D4F5A /* GitXcodeTest */,
+				660E5C3C1CE07F1E001D4F5A /* CustomViews */,
 				660E5C1E1CE058CB001D4F5A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				660E5C1D1CE058CB001D4F5A /* GitXcodeTest.app */,
+				660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +100,8 @@
 			children = (
 				660E5C201CE058CB001D4F5A /* AppDelegate.swift */,
 				660E5C221CE058CB001D4F5A /* ViewController.swift */,
+				660E5C321CE05B9D001D4F5A /* FadeTableViewController.swift */,
+				660E5C341CE06AAC001D4F5A /* CustomViews.swift */,
 				660E5C241CE058CB001D4F5A /* Main.storyboard */,
 				660E5C271CE058CB001D4F5A /* Assets.xcassets */,
 				660E5C291CE058CB001D4F5A /* LaunchScreen.storyboard */,
@@ -64,7 +110,27 @@
 			path = GitXcodeTest;
 			sourceTree = "<group>";
 		};
+		660E5C3C1CE07F1E001D4F5A /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				660E5C3D1CE07F1E001D4F5A /* CustomViews.h */,
+				660E5C3F1CE07F1E001D4F5A /* Info.plist */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		660E5C381CE07F1E001D4F5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660E5C3E1CE07F1E001D4F5A /* CustomViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		660E5C1C1CE058CB001D4F5A /* GitXcodeTest */ = {
@@ -74,15 +140,35 @@
 				660E5C191CE058CB001D4F5A /* Sources */,
 				660E5C1A1CE058CB001D4F5A /* Frameworks */,
 				660E5C1B1CE058CB001D4F5A /* Resources */,
+				660E5C471CE07F1E001D4F5A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				660E5C411CE07F1E001D4F5A /* PBXTargetDependency */,
 			);
 			name = GitXcodeTest;
 			productName = GitXcodeTest;
 			productReference = 660E5C1D1CE058CB001D4F5A /* GitXcodeTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		660E5C3A1CE07F1E001D4F5A /* CustomViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 660E5C441CE07F1E001D4F5A /* Build configuration list for PBXNativeTarget "CustomViews" */;
+			buildPhases = (
+				660E5C361CE07F1E001D4F5A /* Sources */,
+				660E5C371CE07F1E001D4F5A /* Frameworks */,
+				660E5C381CE07F1E001D4F5A /* Headers */,
+				660E5C391CE07F1E001D4F5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomViews;
+			productName = CustomViews;
+			productReference = 660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +181,9 @@
 				ORGANIZATIONNAME = "zdaecqze zdaecq";
 				TargetAttributes = {
 					660E5C1C1CE058CB001D4F5A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					660E5C3A1CE07F1E001D4F5A = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -113,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				660E5C1C1CE058CB001D4F5A /* GitXcodeTest */,
+				660E5C3A1CE07F1E001D4F5A /* CustomViews */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +218,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		660E5C391CE07F1E001D4F5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,12 +232,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660E5C331CE05B9D001D4F5A /* FadeTableViewController.swift in Sources */,
 				660E5C231CE058CB001D4F5A /* ViewController.swift in Sources */,
 				660E5C211CE058CB001D4F5A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		660E5C361CE07F1E001D4F5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				660E5C481CE0800E001D4F5A /* CustomViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		660E5C411CE07F1E001D4F5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 660E5C3A1CE07F1E001D4F5A /* CustomViews */;
+			targetProxy = 660E5C401CE07F1E001D4F5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		660E5C241CE058CB001D4F5A /* Main.storyboard */ = {
@@ -249,7 +363,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GitXcodeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = King.GitXcodeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,10 +376,56 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = GitXcodeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = King.GitXcodeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		660E5C451CE07F1E001D4F5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CustomViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = King.CustomViews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		660E5C461CE07F1E001D4F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CustomViews/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = King.CustomViews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -284,6 +446,14 @@
 			buildConfigurations = (
 				660E5C301CE058CB001D4F5A /* Debug */,
 				660E5C311CE058CB001D4F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		660E5C441CE07F1E001D4F5A /* Build configuration list for PBXNativeTarget "CustomViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				660E5C451CE07F1E001D4F5A /* Debug */,
+				660E5C461CE07F1E001D4F5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
