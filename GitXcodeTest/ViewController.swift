@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         //fdgdfgdfgdghdfg
         gradientLayer.endPoint = CGPoint(x: 0, y: 0.5)
+        //somw changes
         
         
         //dfgdgdfg
