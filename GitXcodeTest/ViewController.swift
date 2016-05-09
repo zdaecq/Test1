@@ -19,6 +19,20 @@ class ViewController: UIViewController {
         view.addSubview(newView)
         
         
+        //dfgdgdfg
+        //dfgdf
+        /*GL_DRAW_FRAMEBUFFER_BINDINGdf
+        gdf
+        g
+        df
+        g
+        df
+        g*/
+        
+        //view.setupBlurWithStyle(.Dark)
+        
+        //view.layer.addSublayer(gradientLayer)
+        //view.addSubview(blurView)
     }
 
     override func didReceiveMemoryWarning() {
