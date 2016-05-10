@@ -1,0 +1,13 @@
+stages:
+  - deploy
+
+deploy_pod:
+  stage: deploy
+  script:
+    - export LANG=en_US.UTF-8
+    - fastlane beta
+  only:
+    - tags
+  tags:
+    - ios
+    - fastlane
