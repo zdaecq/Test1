@@ -17,6 +17,8 @@
 		660E5C421CE07F1E001D4F5A /* CustomViews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */; };
 		660E5C431CE07F1E001D4F5A /* CustomViews.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		660E5C481CE0800E001D4F5A /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660E5C341CE06AAC001D4F5A /* CustomViews.swift */; };
+		666299BF1CE286C900805218 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666299BD1CE286C900805218 /* Fabric.framework */; };
+		666299C01CE286C900805218 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666299BE1CE286C900805218 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		660E5C3B1CE07F1E001D4F5A /* CustomViews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		660E5C3D1CE07F1E001D4F5A /* CustomViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViews.h; sourceTree = "<group>"; };
 		660E5C3F1CE07F1E001D4F5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		666299BD1CE286C900805218 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		666299BE1CE286C900805218 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				660E5C421CE07F1E001D4F5A /* CustomViews.framework in Frameworks */,
+				666299C01CE286C900805218 /* Crashlytics.framework in Frameworks */,
+				666299BF1CE286C900805218 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,8 @@
 				660E5C1F1CE058CB001D4F5A /* GitXcodeTest */,
 				660E5C3C1CE07F1E001D4F5A /* CustomViews */,
 				660E5C1E1CE058CB001D4F5A /* Products */,
+				666299BD1CE286C900805218 /* Fabric.framework */,
+				666299BE1CE286C900805218 /* Crashlytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +149,7 @@
 				660E5C1A1CE058CB001D4F5A /* Frameworks */,
 				660E5C1B1CE058CB001D4F5A /* Resources */,
 				660E5C471CE07F1E001D4F5A /* Embed Frameworks */,
+				666299BC1CE2869600805218 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -226,6 +235,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		666299BC1CE2869600805218 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a5d85d058a83a56ab8902af20d910351fd97fc9f 049df64e3d3a6bf913f7600786d68b6d277aa85207a46610e00732276bb3f2a7";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		660E5C191CE058CB001D4F5A /* Sources */ = {
@@ -364,6 +389,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GitXcodeTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -377,6 +406,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = GitXcodeTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
