@@ -11,6 +11,18 @@ import Fabric
 import Crashlytics
 
 
+class DismissSegue: UIStoryboardSegue {
+    
+    
+    override func perform() {
+        let sourceViewController = self.sourceViewController
+        //sourceViewController.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        sourceViewController.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+}
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
