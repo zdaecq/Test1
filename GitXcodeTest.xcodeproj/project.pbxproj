@@ -22,6 +22,10 @@
 		666299C41CE3BEBD00805218 /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666299C11CE3BEBD00805218 /* DigitsKit.framework */; };
 		666299C51CE3BEBD00805218 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 666299C21CE3BEBD00805218 /* DigitsKitResources.bundle */; };
 		666299C61CE3BEBD00805218 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666299C31CE3BEBD00805218 /* TwitterCore.framework */; };
+		666299C81CE66BF500805218 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666299C71CE66BF500805218 /* CustomCell.swift */; };
+		666299CB1CE67D4E00805218 /* FlipingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666299C91CE67D4E00805218 /* FlipingCell.swift */; };
+		666299CC1CE67D4E00805218 /* FlipingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 666299CA1CE67D4E00805218 /* FlipingCell.xib */; };
+		668C34EC1CE7DDF8008C515F /* MySegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C34EB1CE7DDF8008C515F /* MySegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		666299C11CE3BEBD00805218 /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
 		666299C21CE3BEBD00805218 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		666299C31CE3BEBD00805218 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		666299C71CE66BF500805218 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		666299C91CE67D4E00805218 /* FlipingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipingCell.swift; sourceTree = "<group>"; };
+		666299CA1CE67D4E00805218 /* FlipingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipingCell.xib; sourceTree = "<group>"; };
+		668C34EB1CE7DDF8008C515F /* MySegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,10 @@
 				660E5C321CE05B9D001D4F5A /* FadeTableViewController.swift */,
 				660E5C341CE06AAC001D4F5A /* CustomViews.swift */,
 				660E5C241CE058CB001D4F5A /* Main.storyboard */,
+				666299C71CE66BF500805218 /* CustomCell.swift */,
+				668C34EB1CE7DDF8008C515F /* MySegue.swift */,
+				666299C91CE67D4E00805218 /* FlipingCell.swift */,
+				666299CA1CE67D4E00805218 /* FlipingCell.xib */,
 				660E5C271CE058CB001D4F5A /* Assets.xcassets */,
 				660E5C291CE058CB001D4F5A /* LaunchScreen.storyboard */,
 				660E5C2C1CE058CB001D4F5A /* Info.plist */,
@@ -160,7 +172,8 @@
 				660E5C1A1CE058CB001D4F5A /* Frameworks */,
 				660E5C1B1CE058CB001D4F5A /* Resources */,
 				660E5C471CE07F1E001D4F5A /* Embed Frameworks */,
-				666299BC1CE2869600805218 /* ShellScript */,
+				6651A9CD1CE7BCA10026C7DE /* ShellScript */,
+				6651A9CE1CE7BCB60026C7DE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666299CC1CE67D4E00805218 /* FlipingCell.xib in Resources */,
 				666299C51CE3BEBD00805218 /* DigitsKitResources.bundle in Resources */,
 				660E5C2B1CE058CB001D4F5A /* LaunchScreen.storyboard in Resources */,
 				660E5C281CE058CB001D4F5A /* Assets.xcassets in Resources */,
@@ -250,7 +264,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		666299BC1CE2869600805218 /* ShellScript */ = {
+		6651A9CD1CE7BCA10026C7DE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,6 +277,19 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run a5d85d058a83a56ab8902af20d910351fd97fc9f 049df64e3d3a6bf913f7600786d68b6d277aa85207a46610e00732276bb3f2a7";
 		};
+		6651A9CE1CE7BCB60026C7DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,7 +299,10 @@
 			files = (
 				660E5C331CE05B9D001D4F5A /* FadeTableViewController.swift in Sources */,
 				660E5C231CE058CB001D4F5A /* ViewController.swift in Sources */,
+				666299C81CE66BF500805218 /* CustomCell.swift in Sources */,
+				666299CB1CE67D4E00805218 /* FlipingCell.swift in Sources */,
 				660E5C211CE058CB001D4F5A /* AppDelegate.swift in Sources */,
+				668C34EC1CE7DDF8008C515F /* MySegue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
